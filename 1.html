@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOAL NO 1</title>
+  </head>
+
+  <body>
+    <h2>SOAL NO 1</h2>
+    <h4>TEST DUMBWAYS BATCH 20 KLOTER 2</h4>
+    <script>
+      function perjalananSales(toko, tempatA, tempatD, tempatC) {
+        let liter = 1000;
+        let jarak = 2500 / liter;
+        let harga = 7000 / liter;
+        let totalJarak = toko + tempatA + tempatD + tempatC;
+        let totalHarga = (totalJarak / jarak) * harga;
+        let totalLiter = totalJarak / jarak / 1000;
+
+        document.write(
+          "Toko - Tempat A =  " +
+            toko / 1000 +
+            " KM | " +
+            "Rp. " +
+            (toko / jarak) * harga +
+            " | " +
+            toko / jarak / 1000 +
+            " Liter " +
+            "<br>"
+        );
+
+        document.write(
+          "Tempat A - Tempat D =  " +
+            tempatA / 1000 +
+            " KM | " +
+            "Rp. " +
+            (tempatA / jarak) * harga +
+            " | " +
+            tempatA / jarak / 1000 +
+            " Liter " +
+            "<br>"
+        );
+
+        document.write(
+          "Tempat D - Tempat C =  " +
+            tempatD / 1000 +
+            " KM | " +
+            "Rp. " +
+            (tempatD / jarak) * harga +
+            " | " +
+            tempatD / jarak / 1000 +
+            " Liter " +
+            "<br>"
+        );
+
+        document.write(
+          "Tempat C - Toko =  " +
+            tempatC / 1000 +
+            " KM | " +
+            "Rp. " +
+            (tempatC / jarak) * harga +
+            " | " +
+            tempatC / jarak / 1000 +
+            " Liter " +
+            "<br><br>"
+        );
+
+        document.write("Total Jarak = " + totalJarak / 1000 + " KM " + "<br>");
+        document.write("Total Harga = Rp. " + totalHarga + "<br>");
+        document.write("Total Liter = " + totalLiter + " Liter " + "<br>");
+      }
+      perjalananSales(2000, 4500, 2500, 4000);
+    </script>
+  </body>
+</html>
